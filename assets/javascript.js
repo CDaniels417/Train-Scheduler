@@ -50,7 +50,7 @@ $(document).ready(function () {
         console.log(minutes);
         console.log(arrival);
 
-        $("#trainTable > tbody").append(
+        $("#body").append(
             "<tr><td>" + name + 
             "</td><td>" + destination + 
             "</td><td>" + frequency + 

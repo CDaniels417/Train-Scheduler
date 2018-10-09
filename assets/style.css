@@ -1,3 +1,43 @@
+.jumbotron {
+    position: relative;
+    margin-top: 1%;
+}
+
+.jumbotron:before,
+.jumbotron:after
+ {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+.jumbotron:after {
+    filter: blur(20px)
+}
+
+@keyframes animate 
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 300% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
 .card{
     background-color: aliceblue;
 }
